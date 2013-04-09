@@ -724,9 +724,11 @@ ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
+  margin-top: 10px;
 }
 li {
   line-height: 20px;
+  margin-bottom: 10px;
 }
 ul.unstyled,
 ol.unstyled {
@@ -757,9 +759,11 @@ dd {
 }
 dt {
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 dd {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .dl-horizontal {
   *zoom: 1;
@@ -781,9 +785,12 @@ dd {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-top: 0;
 }
 .dl-horizontal dd {
   margin-left: 180px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 hr {
   margin: 20px 0;
