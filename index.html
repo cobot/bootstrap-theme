@@ -24,7 +24,7 @@
       padding-top: 60px;
     }
 
-    .page-header a {
+    section .page-header h1{
       padding-top: 60px;
     }
 
@@ -91,30 +91,31 @@
 
     <div class="content-wrap">
 
-        <div class="row  padded">
-          <div class="span8">
-            <section class="intro">
-              <h1>Welcome to co.up</h1>
-              <p>co.up is a 330sqm loft style space on two floors, with three large office rooms, two meeting rooms, and a lounge. It's spacious and quiet during the day when people are getting work done, but crowded and busy in the evenings when user groups meet here.</p>
-              <p>Please email us via <a href="mailto:hello@co-up.de">hello@co-up.de</a> before you sign up for any plan.</p>
-            </section>
-            
-          </div>
-          <div class="span4">
-             <section class="">
-              <h1>Become a member</h1>
-              <a class="btn" href="#">Sign up</a>
+      <div class="row  padded">
+        <div class="span8">
+          <section class="intro">
+            <h1>Welcome to co.up</h1>
+            <p>co.up is a 330sqm loft style space on two floors, with three large office rooms, two meeting rooms, and a lounge. It's spacious and quiet during the day when people are getting work done, but crowded and busy in the evenings when user groups meet here.</p>
+            <p>Please email us via <a href="mailto:hello@co-up.de">hello@co-up.de</a> before you sign up for any plan.</p>
+          </section>
+          
+        </div>
+        <div class="span4">
+           <section class="">
+            <h1>Become a member</h1>
+            <a class="btn" href="#">Sign up</a>
 
-              <p>Already a member? <a href="#">Log in</a></p>
-            </section>
-            
-          </div>
-        </div><!-- /row -->
+            <p>Already a member? <a href="#">Log in</a></p>
+          </section>
+          
+        </div>
+      </div><!-- /row -->
 
-        <!-- Typography
-        ================================================== -->
+      <!-- Typography
+      ================================================== -->
+      <section class="section">
         <div class="page-header">
-          <h1><a name="typo">#</a> Typography</h1>
+          <h1 id="typo">Typography</h1>
         </div>
         <div class="row">
           <div class="span6">
@@ -210,7 +211,7 @@
               <a href="mailto:alex@upstre.am">alex@upstre.am</a>
             </address>
           </div>
-        </div>
+        </div><!-- /row -->
 
         <div class="row">
           <div class="span12">
@@ -261,6 +262,7 @@
                 </ul>
               </div>
             </div><!-- /row -->
+
             <div class="row">
               <div class="span12">
                 <h3>Inline</h3>
@@ -273,6 +275,7 @@
                 </ul>
               </div>
             </div><!-- /row -->
+
             <div class="row">
               <div class="span6">
                 <h3>Description</h3>
@@ -323,10 +326,10 @@
               </div><!-- /row -->
           </div>
         </div><!-- /row -->
+      </section><!-- /TYPOGRAPHY -->
 
           
-
-
+      <section class="section" id="images">
         <!-- Responsive images
         ================================================== -->
         <div class="page-header">
@@ -345,8 +348,6 @@
           </div>
         </div>
 
-        <br>
-
         <div class="row">
           <div class="span4">
             <img data-src="js/holder/holder.js/600x900" style="width: 200px;">
@@ -358,10 +359,12 @@
             <img data-src="js/holder/holder.js/600x600">
           </div>
         </div>
+      </section>
+      <!-- /Images -->
 
 
 
-
+      <section class="section" id="grid">
         <!-- Fluid grid
         ================================================== -->
 
@@ -593,19 +596,20 @@
             </div>
           </div>
         </div> <!-- fluid grids -->
+      </section>
+      <!-- /Grid -->
 
 
-
+      <section class="section">
         <!-- Tables
         ================================================== -->
-
         <div class="page-header">
-          <h1>Tables</h1>
+          <h1 id="tables">Tables</h1>
         </div>
 
         <div class="row">
           <div class="span6">
-            <h4>Bordered without thead</h4>
+            <h2>Bordered without thead</h2>
             <table class="table table-bordered">
               <tbody>
                 <tr>
@@ -625,7 +629,7 @@
                 </tr>
               </tbody>
             </table>
-            <h4>Bordered without thead, with caption</h4>
+            <h2>Bordered without thead, with caption</h2>
             <table class="table table-bordered">
               <caption>Table caption</caption>
               <tbody>
@@ -646,7 +650,7 @@
                 </tr>
               </tbody>
             </table>
-            <h4>Bordered without thead, with colgroup</h4>
+            <h2>Bordered without thead, with colgroup</h2>
             <table class="table table-bordered">
               <colgroup>
                 <col class="col1">
@@ -678,7 +682,7 @@
                 </tr>
               </tfoot>
             </table>
-            <h4>Bordered with thead, with colgroup</h4>
+            <h2>Bordered with thead, with colgroup</h2>
             <table class="table table-bordered">
               <colgroup>
                 <col class="col1">
@@ -719,7 +723,7 @@
             </table>
           </div><!--/span-->
           <div class="span6">
-            <h4>Bordered with thead and caption</h4>
+            <h2>Bordered with thead and caption</h2>
             <table class="table table-bordered">
               <caption>Table caption</caption>
               <thead>
@@ -754,7 +758,7 @@
                 </tr>
               </tfoot>
             </table>
-            <h4>Bordered with rowspan and colspan</h4>
+            <h2>Bordered with rowspan and colspan</h2>
             <table class="table table-bordered">
               <thead>
                 <tr>
@@ -785,8 +789,7 @@
           </div><!--/span-->
         </div><!--/row-->
 
-
-        <h4>Grid sizing</h4>
+        <h2>Grid sizing</h2>
         <div class="row">
           <div class="span12">
             <table class="table table-bordered">
@@ -818,8 +821,7 @@
             </table>
           </div>
         </div><!--/row-->
-
-        <h4>Nesting and striping</h4>
+        <h2>Nesting and striping</h2>
         <table class="table table-bordered table-striped">
           <thead>
             <tr>
@@ -868,7 +870,7 @@
           </tbody>
         </table>
 
-        <h4>Fluid grid sizing</h4>
+        <h2>Fluid grid sizing</h2>
         <div class="row-fluid">
           <div class="span12">
             <table class="table table-bordered">
@@ -901,6 +903,265 @@
           </div>
         </div><!--/row-->
 
+      </section>
+      <!-- /Tables -->
+
+
+      <!-- Nav: tabs, pills, dropdowns and lists
+      ================================================= -->
+      <section class="section">
+        <div class="page-header">
+          <h1 id="navigation">Nav: tabs, pills, and lists</h1>
+        </div>
+        <h2>Lightweight defaults <small>Same markup, different classes</small></h2>
+        <p>All nav components here&mdash;tabs, pills, and lists&mdash;<strong>share the same base markup and styles</strong> through the <code>.nav</code> class.</p>
+
+        <h3>Basic tabs</h3>
+        <p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+
+        <h3>Basic pills</h3>
+        <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+
+        <h3>Disabled state</h3>
+        <p>For any nav component (tabs, pills, or list), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>. Links will remain clickable, however, unless you remove the <code>href</code> attribute. Alternatively, you could implement custom JavaScript to prevent those clicks.</p>
+        <ul class="nav nav-pills">
+          <li><a href="#">Clickable link</a></li>
+          <li><a href="#">Clickable link</a></li>
+          <li class="disabled"><a href="#">Disabled link</a></li>
+        </ul>
+
+        <h3>Component alignment</h3>
+        <p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
+
+        <hr class="bs-docs-separator">
+
+        <h3>Stackable</h3>
+        <p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
+
+        <h4>Stacked tabs</h4>
+        <ul class="nav nav-tabs nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+
+        <h4>Stacked pills</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+
+        <hr class="bs-docs-separator">
+
+        <!-- Navigation / Tabs
+        ================================================== -->
+        <h2>Tabs / right, left, top, bottom</h2>
+
+        <div class="tabbable tabs-left" style="margin-bottom: 18px;">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+            <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+            <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+          </ul>
+          <div class="tab-content" style="padding-bottom: 9px;">
+            <div class="tab-pane active" id="tab1">
+              <p>I'm in Section 1.</p>
+
+              <div class="tabbable" style=" padding: 20px 0;">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab1-1" data-toggle="tab">1.1</a></li>
+                  <li><a href="#tab1-2" data-toggle="tab">1.2</a></li>
+                  <li><a href="#tab1-3" data-toggle="tab">1.3</a></li>
+                </ul>
+                <div class="tab-content" style="padding-bottom: 9px;">
+                  <div class="tab-pane active" id="tab1-1">
+                    <p>I'm in Section 1.1.</p>
+                  </div>
+                  <div class="tab-pane" id="tab1-2">
+                    <p>I'm in Section 1.2.</p>
+                  </div>
+                  <div class="tab-pane" id="tab1-3">
+                    <p>I'm in Section 1.3.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <p>Howdy, I'm in Section 2.</p>
+            </div>
+            <div class="tab-pane" id="tab3">
+              <p>What up girl, this is Section 3.</p>
+            </div>
+          </div>
+        </div> <!-- /tabbable -->
+
+
+        <div class="tabbable tabs-right" style="margin-bottom: 18px;">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-right-1" data-toggle="tab">Section right 1</a></li>
+            <li><a href="#tab-right-2" data-toggle="tab">Section right 2</a></li>
+            <li><a href="#tab-right-3" data-toggle="tab">Section right 3</a></li>
+          </ul>
+          <div class="tab-content" style="padding-bottom: 9px;">
+            <div class="tab-pane active" id="tab-right-1">
+              <p>I'm in Section right 1.</p>
+
+              <div class="tabbable  tabs-below" style=" padding: 20px 0;">
+                
+                <div class="tab-content" style="padding-bottom: 9px;">
+                  <div class="tab-pane active" id="tab3-1">
+                    <p>I'm in Section bottom 3.1.</p>
+                  </div>
+                  <div class="tab-pane" id="tab3-2">
+                    <p>I'm in Section bottom 3.2.</p>
+                  </div>
+                  <div class="tab-pane" id="tab3-3">
+                    <p>I'm in Section bottom 3.3.</p>
+                  </div>
+                </div>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab3-1" data-toggle="tab">bottom 3.1</a></li>
+                  <li><a href="#tab3-2" data-toggle="tab">bottom 3.2</a></li>
+                  <li><a href="#tab3-3" data-toggle="tab">bottom 3.3</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-right-2">
+              <p>Howdy, I'm in Section right 2.</p>
+            </div>
+            <div class="tab-pane" id="tab-right-3">
+              <p>What up girl, this is Section right 3.</p>
+            </div>
+          </div>
+        </div> <!-- /tabbable -->
+
+        <hr class="bs-docs-separator">
+
+
+        <!-- Navigation / Dropdowns
+        ================================================== -->
+        <h2>Dropdowns</h2>
+
+        <p>Add dropdown menus with a little extra HTML and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
+
+        <h3>Dropdown link with hash URL</h3>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Link</a></li>
+          <li><a href="#">Example link</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Dropdown link with custom URL and data-target</h3>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Link</a></li>
+          <li><a href="#">Example link</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="path/to/page.html">
+              Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Dropdown on a button</h3>
+        <div style="position: relative;">
+          <button class="btn" type="button" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+
+        <h3>Tabs with dropdowns</h3>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Help</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Pills with dropdowns</h3>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Help</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr class="bs-docs-separator">
+
+        <!-- Navigation / Nav lists
+        ================================================== -->
+        <h2>Nav lists</h2>
+        <p>A simple and easy way to build groups of nav links with optional headers. They're best used in sidebars like the Finder in OS X.</p>
+
+        <h3>Example nav list</h3>
+        <p>Take a list of links and add <code>class="nav nav-list"</code>:</p>
+        <div class="well" style="max-width: 340px; padding: 8px 0;">
+          <ul class="nav nav-list">
+            <li class="nav-header">List header</li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Applications</a></li>
+            <li class="nav-header">Another list header</li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div> <!-- /well -->
+
+      </section> 
+      <!-- /Navigation -->
+
 
 
 <!-- Forms
@@ -910,7 +1171,7 @@
   <h1><a name="forms">#</a> Forms</h1>
 </div>
 
-<h4>Buttons and button groups</h4>
+<h2>Buttons and button groups</h2>
 <form class="form-inline">
   <button class="btn">Default button</button>
   <button class="btn btn-success">Success button</button>
@@ -934,7 +1195,7 @@
   </div>
 </form>
 
-<h4>Sizes of buttons</h4>
+<h2>Sizes of buttons</h2>
 <form class="form-inline">
   <button class="btn btn-large">Large button</button>
   <button class="btn btn-small">Small button</button>
@@ -942,7 +1203,7 @@
 </form>
 
 
-<h4>Horizontal form errors</h4>
+<h2>Horizontal form errors</h2>
 <form class="form-horizontal">
   <div class="control-group error">
     <label class="control-label" for="inputError">Radio with error</label>
@@ -957,7 +1218,7 @@
 
 <div class="row">
   <div class="span4">
-    <h4>Prepend and append on inputs</h4>
+    <h2>Prepend and append on inputs</h2>
     <form>
       <div class="controls">
         <div class="input-prepend">
@@ -981,7 +1242,7 @@
     </form>
   </div><!--/span-->
   <div class="span4">
-    <h4>Prepend and append with uneditable</h4>
+    <h2>Prepend and append with uneditable</h2>
     <form>
       <div class="input-prepend">
         <span class="add-on">$</span>
@@ -999,7 +1260,7 @@
     </form>
   </div><!--/span-->
   <div class="span4">
-    <h4>Prepend with type="submit"</h4>
+    <h2>Prepend with type="submit"</h2>
     <form class="form-search">
       <div class="input-append">
         <input type="text" class="span2 search-query" value="" name="q">
@@ -1163,7 +1424,7 @@
 
 
 
-<h4>Fluid prepended and appended inputs</h4>
+<h2>Fluid prepended and appended inputs</h2>
 <div class="row-fluid">
   <div class="span6">
     <form>
@@ -1186,7 +1447,7 @@
   </div>
 </div>
 
-<h4>Fixed row with inputs</h4>
+<h2>Fixed row with inputs</h2>
 <p>Inputs should not extend past the light red background, set on their parent, a <code>.span*</code> column.</p>
 
 <div class="rowInputs">
@@ -1253,7 +1514,7 @@
 </div>
 <br>
 
-<h4>Fluid row with inputs</h4>
+<h2>Fluid row with inputs</h2>
 <p>Inputs should not extend past the light red background, set on their parent, a <code>.span*</code> column.</p>
 <div id="fluidRowInputs">
   <div class="row-fluid">
@@ -1320,7 +1581,7 @@
 
 <br>
 
-<h4>Inline form in fluid row</h4>
+<h2>Inline form in fluid row</h2>
 
 <div class="row-fluid">
   <div class="span12">
@@ -1339,7 +1600,7 @@
 <br>
 
 
-<h4>Fluid textarea at .span12</h4>
+<h2>Fluid textarea at .span12</h2>
 <div class="row-fluid">
   <div class="span12">
     <textarea class="span12"></textarea>
@@ -1350,7 +1611,7 @@
 <br>
 
 
-<h4>Selects</h4>
+<h2>Selects</h2>
 <form>
   <select class="span4">
     <option>Option</option>
@@ -1360,68 +1621,6 @@
   </select>
 </form>
 
-
-<br>
-
-
-
-
-<!-- Dropdowns
-================================================== -->
-
-<div class="page-header">
-  <h1>Dropdowns</h1>
-</div>
-
-<h4>Dropdown link with hash URL</h4>
-<ul class="nav nav-pills">
-  <li class="active"><a href="#">Link</a></li>
-  <li><a href="#">Example link</a></li>
-  <li class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-      Dropdown <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu">
-      <li><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Separated link</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h4>Dropdown link with custom URL and data-target</h4>
-<ul class="nav nav-pills">
-  <li class="active"><a href="#">Link</a></li>
-  <li><a href="#">Example link</a></li>
-  <li class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="path/to/page.html">
-      Dropdown <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu">
-      <li><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Separated link</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h4>Dropdown on a button</h4>
-<div style="position: relative;">
-  <button class="btn" type="button" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-
-<br>
 
 
 <!-- Modals
@@ -1461,7 +1660,7 @@
   <h1>Thumbnails</h1>
 </div>
 
-<h4>Default thumbnails (no grid sizing)</h4>
+<h2>Default thumbnails (no grid sizing)</h2>
 <ul class="thumbnails">
   <li class="thumbnail">
     <img data-src="holder.js/260x180" alt="">
@@ -1478,7 +1677,7 @@
 </ul>
 
 <!-- NOT CURRENTLY SUPPORTED
-<h4>Offset thumbnails</h4>
+<h2>Offset thumbnails</h2>
 <ul class="thumbnails">
   <li class="span3 offset3">
     <a href="#" class="thumbnail">
@@ -1498,7 +1697,7 @@
 </ul>
 -->
 
-<h4>Standard grid sizing</h4>
+<h2>Standard grid sizing</h2>
 <ul class="thumbnails">
   <li class="span3">
     <a href="#" class="thumbnail">
@@ -1517,7 +1716,7 @@
   </li>
 </ul>
 
-<h4>Fluid thumbnails</h4>
+<h2>Fluid thumbnails</h2>
 <div class="row-fluid">
   <div class="span8">
     <ul class="thumbnails">
@@ -1541,151 +1740,11 @@
 </div>
 
 
-<!-- Nav: tabs, pills, and lists
-================================================= -->
-<section id="nav">
-  <div class="page-header">
-    <h1><a name="navigation">#</a> Nav: tabs, pills, and lists</h1>
-  </div>
-  <h2>Lightweight defaults <small>Same markup, different classes</small></h2>
-  <p>All nav components here&mdash;tabs, pills, and lists&mdash;<strong>share the same base markup and styles</strong> through the <code>.nav</code> class.</p>
-  <h3>Basic tabs</h3>
-  <p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Profile</a></li>
-    <li><a href="#">Messages</a></li>
-  </ul>
-  <h3>Basic pills</h3>
-  <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Profile</a></li>
-    <li><a href="#">Messages</a></li>
-  </ul>
-
-  <h3>Disabled state</h3>
-  <p>For any nav component (tabs, pills, or list), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>. Links will remain clickable, however, unless you remove the <code>href</code> attribute. Alternatively, you could implement custom JavaScript to prevent those clicks.</p>
-  <ul class="nav nav-pills">
-    <li><a href="#">Clickable link</a></li>
-    <li><a href="#">Clickable link</a></li>
-    <li class="disabled"><a href="#">Disabled link</a></li>
-  </ul>
-  <h3>Component alignment</h3>
-  <p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
-
-
-  <hr class="bs-docs-separator">
-
-
-  <h2>Stackable</h2>
-  <p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
-
-  <h3>Stacked tabs</h3>
-  <ul class="nav nav-tabs nav-stacked">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Profile</a></li>
-    <li><a href="#">Messages</a></li>
-  </ul>
-
-
-  <h3>Stacked pills</h3>
-  <ul class="nav nav-pills nav-stacked">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Profile</a></li>
-    <li><a href="#">Messages</a></li>
-  </ul>
-
-<section> <!-- /nav -->
 
 
 
 
 
-<!-- Tabs
-================================================== -->
-
-<div class="page-header">
-  <h1>Tabs / right, left, top, bottom</h1>
-</div>
-
-<div class="tabbable tabs-left" style="margin-bottom: 18px;">
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-    <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
-  </ul>
-  <div class="tab-content" style="padding-bottom: 9px;">
-    <div class="tab-pane active" id="tab1">
-      <p>I'm in Section 1.</p>
-
-      <div class="tabbable" style=" padding: 20px 0;">
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab1-1" data-toggle="tab">1.1</a></li>
-          <li><a href="#tab1-2" data-toggle="tab">1.2</a></li>
-          <li><a href="#tab1-3" data-toggle="tab">1.3</a></li>
-        </ul>
-        <div class="tab-content" style="padding-bottom: 9px;">
-          <div class="tab-pane active" id="tab1-1">
-            <p>I'm in Section 1.1.</p>
-          </div>
-          <div class="tab-pane" id="tab1-2">
-            <p>I'm in Section 1.2.</p>
-          </div>
-          <div class="tab-pane" id="tab1-3">
-            <p>I'm in Section 1.3.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane" id="tab2">
-      <p>Howdy, I'm in Section 2.</p>
-    </div>
-    <div class="tab-pane" id="tab3">
-      <p>What up girl, this is Section 3.</p>
-    </div>
-  </div>
-</div> <!-- /tabbable -->
-
-
-<div class="tabbable tabs-right" style="margin-bottom: 18px;">
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#tab-right-1" data-toggle="tab">Section right 1</a></li>
-    <li><a href="#tab-right-2" data-toggle="tab">Section right 2</a></li>
-    <li><a href="#tab-right-3" data-toggle="tab">Section right 3</a></li>
-  </ul>
-  <div class="tab-content" style="padding-bottom: 9px;">
-    <div class="tab-pane active" id="tab-right-1">
-      <p>I'm in Section right 1.</p>
-
-      <div class="tabbable  tabs-below" style=" padding: 20px 0;">
-        
-        <div class="tab-content" style="padding-bottom: 9px;">
-          <div class="tab-pane active" id="tab3-1">
-            <p>I'm in Section bottom 3.1.</p>
-          </div>
-          <div class="tab-pane" id="tab3-2">
-            <p>I'm in Section bottom 3.2.</p>
-          </div>
-          <div class="tab-pane" id="tab3-3">
-            <p>I'm in Section bottom 3.3.</p>
-          </div>
-        </div>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab3-1" data-toggle="tab">bottom 3.1</a></li>
-          <li><a href="#tab3-2" data-toggle="tab">bottom 3.2</a></li>
-          <li><a href="#tab3-3" data-toggle="tab">bottom 3.3</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="tab-pane" id="tab-right-2">
-      <p>Howdy, I'm in Section right 2.</p>
-    </div>
-    <div class="tab-pane" id="tab-right-3">
-      <p>What up girl, this is Section right 3.</p>
-    </div>
-  </div>
-</div> <!-- /tabbable -->
 
 <!-- Labels
 ================================================== -->
@@ -1696,7 +1755,7 @@
 
 <div class="row">
   <div class="span4">
-    <h4>Inline label</h4>
+    <h2>Inline label</h2>
     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam <span class="label label-warning">Label name</span> eget risus varius blandit sit amet non magna. Fusce <code>.class-name</code> dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
   </div><!--/span-->
   <div class="span4">
@@ -1739,7 +1798,7 @@
   </tbody>
 </table>
 
-<h4>Mini buttons: text and icon</h4>
+<h2>Mini buttons: text and icon</h2>
 <div class="btn-group">
   <button class="btn btn-mini">Button text</button>
   <button class="btn btn-mini"><i class="icon-cog"></i></button>
@@ -1756,7 +1815,7 @@
   <h1>Responsive utility classes</h1>
 </div>
 
-<h4>Visible on...</h4>
+<h2>Visible on...</h2>
 <ul class="responsive-utilities-test visible-on">
   <li>Phone<span class="visible-phone">✔ Phone</span></li>
   <li>Tablet<span class="visible-tablet">✔ Tablet</span></li>
@@ -1768,7 +1827,7 @@
   <li>All<span class="visible-phone visible-tablet visible-desktop">✔ All</span></li>
 </ul>
 
-<h4>Hidden on...</h4>
+<h2>Hidden on...</h2>
 <ul class="responsive-utilities-test hidden-on">
   <li>Phone<span class="hidden-phone">✔ Phone</span></li>
   <li>Tablet<span class="hidden-tablet">✔ Tablet</span></li>
@@ -1789,25 +1848,25 @@
   <h1>Gradients</h1>
 </div>
 
-<h4>Horizontal</h4>
+<h2>Horizontal</h2>
 <div class="gradient-horizontal"></div>
 
-<h4>Vertical</h4>
+<h2>Vertical</h2>
 <div class="gradient-vertical"></div>
 
-<h4>Directional</h4>
+<h2>Directional</h2>
 <div class="gradient-directional"></div>
 
-<h4>Three colors</h4>
+<h2>Three colors</h2>
 <div class="gradient-vertical-three"></div>
 
-<h4>Radial</h4>
+<h2>Radial</h2>
 <div class="gradient-radial"></div>
 
-<h4>Striped</h4>
+<h2>Striped</h2>
 <div class="gradient-striped"></div>
 
-<h4>Horizontal three colors</h4>
+<h2>Horizontal three colors</h2>
 <div class="gradient-horizontal-three"></div>
 
 
@@ -1816,7 +1875,7 @@
   <h1>Alerts</h1>
 </div>
 
-<h4>Alert default</h4>
+<h2>Alert default</h2>
 <div class="alert">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Alert!</strong> Best check yourself, you're not looking too good.
@@ -1826,7 +1885,7 @@
   <p><strong>Alert!</strong> Best check yourself, you're not looking too good.</p>
 </div>
 
-<h4>Success</h4>
+<h2>Success</h2>
 <div class="alert alert-success">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Success!</strong> Best check yourself, you're not looking too good.
@@ -1836,7 +1895,7 @@
   <p><strong>Success!</strong> Best check yourself, you're not looking too good.</p>
 </div>
 
-<h4>Info</h4>
+<h2>Info</h2>
 <div class="alert alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Info!</strong> Best check yourself, you're not looking too good.
@@ -1846,7 +1905,7 @@
   <p><strong>Info!</strong> Best check yourself, you're not looking too good.</p>
 </div>
 
-<h4>Warning</h4>
+<h2>Warning</h2>
 <div class="alert ">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Warning!</strong> Best check yourself, you're not looking too good.
@@ -1856,7 +1915,7 @@
   <p><strong>Warning!</strong> Best check yourself, you're not looking too good.</p>
 </div>
 
-<h4>Error</h4>
+<h2>Error</h2>
 <div class="alert alert-error">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Error!</strong> Best check yourself, you're not looking too good.

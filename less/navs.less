@@ -59,6 +59,9 @@
   padding-right: 15px;
   margin-bottom: 0;
 }
+.nav-list > li {
+  margin-bottom: 0;
+}
 .nav-list > li > a,
 .nav-list .nav-header {
   margin-left:  -15px;
@@ -66,7 +69,7 @@
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 .nav-list > li > a {
-  padding: 3px 15px;
+  padding: @baseLineHeight / 2.5 15px;
 }
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
@@ -241,19 +244,28 @@
 .nav-pills .dropdown-menu {
   .border-radius(6px); // make rounded corners match the pills
 }
+.nav-tabs .open .dropdown-menu {
+  margin-top: -1px;
+}
 
 // Default dropdown links
 // -------------------------
 // Make carets use linkColor to start
 .nav .dropdown-toggle .caret {
+  border-top-color: @textColorLighter;
+  border-bottom-color: @textColorLighter;
+  margin-top: 6px;
+}
+// Make carets use linkColor to start
+.nav-pills .dropdown-toggle .caret {
   border-top-color: @linkColor;
   border-bottom-color: @linkColor;
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: @linkColorHover;
-  border-bottom-color: @linkColorHover;
+  border-top-color: @textColorLight;
+  border-bottom-color: @textColorLight;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -263,8 +275,8 @@
 // Active dropdown links
 // -------------------------
 .nav .active .dropdown-toggle .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border-top-color: @white;
+  border-bottom-color: @white;
 }
 .nav-tabs .active .dropdown-toggle .caret {
   border-top-color: @gray;
@@ -285,8 +297,9 @@
 .nav > li.dropdown.open.active > a:hover,
 .nav > li.dropdown.open.active > a:focus {
   color: @white;
-  background-color: @grayLight;
-  border-color: @grayLight;
+  background: none;
+  background-color: @bodyBackgroundDarker;
+  border-color: @bodyBackgroundDarker;
 }
 .nav li.dropdown.open .caret,
 .nav li.dropdown.open.active .caret,
@@ -300,7 +313,7 @@
 // Dropdowns in stacked tabs
 .tabs-stacked .open > a:hover,
 .tabs-stacked .open > a:focus {
-  border-color: @grayLight;
+  border-color: @bodyBackgroundDarker;
 }
 
 
