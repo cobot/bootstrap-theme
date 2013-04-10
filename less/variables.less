@@ -196,35 +196,35 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBackgroundHighlight:       @bodyBackgroundLighter;
+@navbarBackground:                darken(@navbarBackgroundHighlight, 4%);
+@navbarBorder:                    darken(@navbarBackground, 8%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarText:                      @textColorLight;
+@navbarLinkColor:                 @textColorLight;
+@navbarLinkColorHover:            @textColor;
+@navbarLinkColorActive:           @textColor;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                @blueDark;
+@navbarInverseBackgroundHighlight:       lighten(@blueDark, 4%);
+@navbarInverseBorder:                    lighten(@blueDark, 0%);
 
-@navbarInverseText:                      @grayLight;
-@navbarInverseLinkColor:                 @grayLight;
-@navbarInverseLinkColorHover:            @white;
+@navbarInverseText:                      @white;
+@navbarInverseLinkColor:                 @white;
+@navbarInverseLinkColorHover:            darken(@white, 7%);
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
 @navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
 
-@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
-@navbarInverseSearchBackgroundFocus:     @white;
+@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 7%);
+@navbarInverseSearchBackgroundFocus:     lighten(@navbarInverseBackground, 10%);
 @navbarInverseSearchBorder:              @navbarInverseBackground;
-@navbarInverseSearchPlaceholderColor:    #ccc;
+@navbarInverseSearchPlaceholderColor:    @blueDark;
 
 @navbarInverseBrandColor:                @navbarInverseLinkColor;
 
