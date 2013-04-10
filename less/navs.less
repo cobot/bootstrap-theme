@@ -100,8 +100,8 @@
 }
 .nav-tabs > li > a,
 .nav-pills > li > a {
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 18px;
+  padding-left: 18px;
   margin-right: 2px;
   line-height: 14px; // keeps the overall height an even number
 }
@@ -111,31 +111,40 @@
 
 // Give the tabs something to sit on
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @bodyBackgroundDarker;
 }
 // Make the list-items overlay the bottom border
 .nav-tabs > li {
   margin-bottom: -1px;
+  margin-right: @gridGutterWidth / 3;
 }
 // Actual tabs (as links)
 .nav-tabs > li > a {
+  color: @textColorLighter;
+  background-color: @bodyBackgroundLight;
   padding-top: 8px;
   padding-bottom: 8px;
   line-height: @baseLineHeight;
-  border: 1px solid transparent;
   .border-radius(4px 4px 0 0);
+  border-width: 1px;
+  border-style: solid;
+  border-color: @bodyBackground @bodyBackground @bodyBackgroundDarker;
   &:hover,
   &:focus {
-    border-color: @grayLighter @grayLighter #ddd;
+    background:none;
+    .gradientBar(@bodyBackgroundLight, @bodyBackground, @textColorLight, none);
+    border-color: @bodyBackgroundDark;
+    color: @textColorLight;
   }
 }
 // Active state, and it's :hover/:focus to override normal :hover/:focus
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  color: @gray;
-  background-color: @bodyBackground;
-  border: 1px solid #ddd;
+  color: @textColorLight;
+  background: none;
+  background-color: @white;
+  border: 1px solid @bodyBackgroundDarker;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -143,14 +152,22 @@
 
 // PILLS
 // -----
-
+.nav-pills > li {
+  margin-bottom: 0;
+}
 // Links rendered as pills
 .nav-pills > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   .border-radius(5px);
+
+
+  &:hover {
+    color: @textColorLight;
+    background-color: @bodyBackground;
+  }
 }
 
 // Active state
@@ -179,8 +196,12 @@
   border-bottom: 0;
 }
 .nav-tabs.nav-stacked > li > a {
-  border: 1px solid #ddd;
+  border: 1px solid @white; 
   .border-radius(0);
+}
+.nav-tabs.nav-stacked > .active > a {
+  background-color: @blueLight;
+  color: @white;
 }
 .nav-tabs.nav-stacked > li:first-child > a {
   .border-top-radius(4px);
@@ -190,8 +211,15 @@
 }
 .nav-tabs.nav-stacked > li > a:hover,
 .nav-tabs.nav-stacked > li > a:focus {
-  border-color: #ddd;
+  border-color: @white;
+  background-color: @bodyBackgroundLight;
+  transition: background-color .15s ease;
   z-index: 2;
+}
+.nav-tabs.nav-stacked > .active > a:hover,
+.nav-tabs.nav-stacked > .active > a:focus {
+  transition: none;
+  background-color: @blueLight;
 }
 
 // Pills
@@ -312,9 +340,8 @@
 
 // BOTTOM
 // ------
-
 .tabs-below > .nav-tabs {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid @bodyBackgroundDarker;
 }
 .tabs-below > .nav-tabs > li {
   margin-top: -1px;
@@ -322,16 +349,23 @@
 }
 .tabs-below > .nav-tabs > li > a {
   .border-radius(0 0 4px 4px);
+  border-color: @bodyBackgroundDarker @bodyBackground @bodyBackground;
   &:hover,
   &:focus {
-    border-bottom-color: transparent;
-    border-top-color: #ddd;
+    background:none;
+    .gradientBar(@bodyBackground, @bodyBackgroundLight, @textColorLight, none);
+    border-bottom-color:  @bodyBackgroundDark;
+    border-top-color: @bodyBackgroundDarker;
   }
 }
 .tabs-below > .nav-tabs > .active > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .nav-tabs > .active > a:focus {
-  border-color: transparent #ddd #ddd #ddd;
+  color: @textColorLight;
+  background: none;
+  background-color: @white;
+  border: 1px solid @bodyBackgroundDarker;
+  border-top-color: transparent;
 }
 
 // LEFT & RIGHT
@@ -353,11 +387,16 @@
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid @bodyBackgroundDarker;
+}
+.tabs-left > .nav-tabs > li {
+  margin-right: 0;
+  margin-bottom: @gridGutterWidth / 3;
 }
 .tabs-left > .nav-tabs > li > a {
   margin-right: -1px;
   .border-radius(4px 0 0 4px);
+  border-color: @bodyBackground @bodyBackgroundDarker  @bodyBackground  @bodyBackground;
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
@@ -366,7 +405,7 @@
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .nav-tabs .active > a:focus {
-  border-color: #ddd transparent #ddd #ddd;
+  border-color: @bodyBackgroundDarker transparent @bodyBackgroundDarker @bodyBackgroundDarker;
   *border-right-color: @white;
 }
 
@@ -374,20 +413,24 @@
 .tabs-right > .nav-tabs {
   float: right;
   margin-left: 19px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid @bodyBackgroundDarker;
+}
+.tabs-right > .nav-tabs > li {
+  margin-bottom: @gridGutterWidth / 3;
 }
 .tabs-right > .nav-tabs > li > a {
   margin-left: -1px;
+  border-color: @bodyBackground @bodyBackground @bodyBackground @bodyBackgroundDarker;
   .border-radius(0 4px 4px 0);
 }
 .tabs-right > .nav-tabs > li > a:hover,
 .tabs-right > .nav-tabs > li > a:focus {
-  border-color: @grayLighter @grayLighter @grayLighter #ddd;
+  border-color: @bodyBackgroundDark;;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .nav-tabs .active > a:focus {
-  border-color: #ddd #ddd #ddd transparent;
+  border-color: @bodyBackgroundDarker @bodyBackgroundDarker @bodyBackgroundDarker transparent;
   *border-left-color: @white;
 }
 

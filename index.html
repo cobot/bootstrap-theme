@@ -71,6 +71,7 @@
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#typo">Typography</a></li>
               <li><a href="#forms">Forms</a></li>
+              <li><a href="#navigation">Navigation</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -1540,12 +1541,72 @@
 </div>
 
 
+<!-- Nav: tabs, pills, and lists
+================================================= -->
+<section id="nav">
+  <div class="page-header">
+    <h1><a name="navigation">#</a> Nav: tabs, pills, and lists</h1>
+  </div>
+  <h2>Lightweight defaults <small>Same markup, different classes</small></h2>
+  <p>All nav components here&mdash;tabs, pills, and lists&mdash;<strong>share the same base markup and styles</strong> through the <code>.nav</code> class.</p>
+  <h3>Basic tabs</h3>
+  <p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+  </ul>
+  <h3>Basic pills</h3>
+  <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+  </ul>
+
+  <h3>Disabled state</h3>
+  <p>For any nav component (tabs, pills, or list), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>. Links will remain clickable, however, unless you remove the <code>href</code> attribute. Alternatively, you could implement custom JavaScript to prevent those clicks.</p>
+  <ul class="nav nav-pills">
+    <li><a href="#">Clickable link</a></li>
+    <li><a href="#">Clickable link</a></li>
+    <li class="disabled"><a href="#">Disabled link</a></li>
+  </ul>
+  <h3>Component alignment</h3>
+  <p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
+
+
+  <hr class="bs-docs-separator">
+
+
+  <h2>Stackable</h2>
+  <p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
+
+  <h3>Stacked tabs</h3>
+  <ul class="nav nav-tabs nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+  </ul>
+
+
+  <h3>Stacked pills</h3>
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+  </ul>
+
+<section> <!-- /nav -->
+
+
+
+
 
 <!-- Tabs
 ================================================== -->
 
 <div class="page-header">
-  <h1>Tabs</h1>
+  <h1>Tabs / right, left, top, bottom</h1>
 </div>
 
 <div class="tabbable tabs-left" style="margin-bottom: 18px;">
@@ -1554,17 +1615,17 @@
     <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
     <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
   </ul>
-  <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+  <div class="tab-content" style="padding-bottom: 9px;">
     <div class="tab-pane active" id="tab1">
       <p>I'm in Section 1.</p>
 
-      <div class="tabbable" style="background: #f5f5f5; padding: 20px;">
+      <div class="tabbable" style=" padding: 20px 0;">
         <ul class="nav nav-tabs">
           <li class="active"><a href="#tab1-1" data-toggle="tab">1.1</a></li>
           <li><a href="#tab1-2" data-toggle="tab">1.2</a></li>
           <li><a href="#tab1-3" data-toggle="tab">1.3</a></li>
         </ul>
-        <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+        <div class="tab-content" style="padding-bottom: 9px;">
           <div class="tab-pane active" id="tab1-1">
             <p>I'm in Section 1.1.</p>
           </div>
@@ -1586,8 +1647,45 @@
   </div>
 </div> <!-- /tabbable -->
 
-<br>
 
+<div class="tabbable tabs-right" style="margin-bottom: 18px;">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab-right-1" data-toggle="tab">Section right 1</a></li>
+    <li><a href="#tab-right-2" data-toggle="tab">Section right 2</a></li>
+    <li><a href="#tab-right-3" data-toggle="tab">Section right 3</a></li>
+  </ul>
+  <div class="tab-content" style="padding-bottom: 9px;">
+    <div class="tab-pane active" id="tab-right-1">
+      <p>I'm in Section right 1.</p>
+
+      <div class="tabbable  tabs-below" style=" padding: 20px 0;">
+        
+        <div class="tab-content" style="padding-bottom: 9px;">
+          <div class="tab-pane active" id="tab3-1">
+            <p>I'm in Section bottom 3.1.</p>
+          </div>
+          <div class="tab-pane" id="tab3-2">
+            <p>I'm in Section bottom 3.2.</p>
+          </div>
+          <div class="tab-pane" id="tab3-3">
+            <p>I'm in Section bottom 3.3.</p>
+          </div>
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab3-1" data-toggle="tab">bottom 3.1</a></li>
+          <li><a href="#tab3-2" data-toggle="tab">bottom 3.2</a></li>
+          <li><a href="#tab3-3" data-toggle="tab">bottom 3.3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-pane" id="tab-right-2">
+      <p>Howdy, I'm in Section right 2.</p>
+    </div>
+    <div class="tab-pane" id="tab-right-3">
+      <p>What up girl, this is Section right 3.</p>
+    </div>
+  </div>
+</div> <!-- /tabbable -->
 
 <!-- Labels
 ================================================== -->
