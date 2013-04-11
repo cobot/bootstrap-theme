@@ -93,7 +93,10 @@
 @tableBackground:                   transparent; // overall background-color
 @tableBackgroundAccent:             #f9f9f9; // for striping
 @tableBackgroundHover:              #f5f5f5; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@tableBorder:                       @bodyBackgroundDark; // table and cell border
+@tableHeaderBackground: 						lighten(@blueDark, 10%);
+@tableHeaderBorder:									darken(@tableHeaderBackground, 3%);
+@tableHeaderColor:			 						@white;
 
 // Buttons
 // -------------------------

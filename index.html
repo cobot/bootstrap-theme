@@ -70,6 +70,7 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#typo">Typography</a></li>
+              <li><a href="#tables">Tables</a></li>
               <li><a href="#navigation">Navigation</a></li>
               <li><a href="#navbar">Navbar</a></li>
               <li><a href="#forms">Forms</a></li>
@@ -904,6 +905,79 @@
             </table>
           </div>
         </div><!--/row-->
+
+        <h2>Sample of table with tabs</h2>
+
+          <div class="tabbable tabbable-table"> 
+            <div class="nav-holder clearfix">
+              <ul class="nav nav-tabs pull-right">
+                <li><a href="#tab1" data-toggle="tab">&lt;&lt;</a></li>
+                <li class="active"><a href="#tab2" data-toggle="tab">March</a></li>
+                <li><a href="#tab3" data-toggle="tab">April</a></li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="tab1">
+                <p>I'm in Section 1.</p>
+              </div>
+              <div class="tab-pane active" id="tab2">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th class="span3">Name</th>
+                      <th class= "span3">Plan</th>
+                      <th class="span3">Payment Method</th>
+                      <th class="span3">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="#">Dona Dona</a>
+                      </td>
+                      <td>
+                        <span class="pull-left">Free</span>
+                        <span class="pull-right">0.00 EUR</span>
+                      </td>
+                      <td>
+                        Nothing
+                      </td>
+                      <td>Confirmed</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">Hugh Hugh</a>
+                      </td>
+                      <td>
+                        <span class="pull-left">Free</span>
+                        <span class="pull-right">0.00 EUR</span>
+                      </td>
+                      <td>
+                        Nothing
+                      </td>
+                      <td>Not Connected</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">Monitor</a>
+                      </td>
+                      <td>
+                        <span class="pull-left">Free</span>
+                        <span class="pull-right">0.00 EUR</span>
+                      </td>
+                      <td>
+                        Nothing
+                      </td>
+                      <td>Confirmed</td>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane" id="tab3">
+                <p>Whoa APRIL</p>
+              </div>
+            </div><!-- /tab-content -->
+          </div><!-- /tabbable -->
+
 
       </section>
       <!-- /Tables -->

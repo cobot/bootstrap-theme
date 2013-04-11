@@ -11,6 +11,12 @@ table {
   background-color: @tableBackground;
   border-collapse: collapse;
   border-spacing: 0;
+
+  caption {
+    font-weight: bold;
+    padding: @baseLineHeight / 3 0;
+    font-size: @baseFontSize * 1.2;
+  }
 }
 
 // BASELINE STYLES
@@ -22,14 +28,25 @@ table {
   // Cells
   th,
   td {
-    padding: 8px;
+    padding: 8px 15px;
     line-height: @baseLineHeight;
     text-align: left;
     vertical-align: top;
     border-top: 1px solid @tableBorder;
   }
+  th.text-right,
+  td.text-right {
+    text-align: right;
+  }
+  th.text-center,
+  td.text-center {
+    text-align: center;
+  }
   th {
     font-weight: bold;
+    background-color: @tableHeaderBackground;
+    color: @tableHeaderColor;
+    border-color:  @tableHeaderBackground;
   }
   // Bottom align for column headings
   thead th {
@@ -81,6 +98,9 @@ table {
   td {
     border-left: 1px solid @tableBorder;
   }
+  th {
+    border-left: 1px solid @tableHeaderBorder;
+  } 
   // Prevent a double border
   caption + thead tr:first-child th,
   caption + tbody tr:first-child th,
@@ -113,6 +133,7 @@ table {
   tfoot:last-child tr:last-child > th:first-child {
     .border-bottom-left-radius(@baseBorderRadius);
   }
+
   // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
   thead:last-child tr:last-child > th:last-child,
   tbody:last-child tr:last-child > td:last-child,
@@ -121,12 +142,20 @@ table {
   tfoot:last-child tr:last-child > th:last-child {
     .border-bottom-right-radius(@baseBorderRadius);
   }
+  
 
   // Clear border-radius for first and last td in the last row in the last tbody for table with tfoot
   tfoot + tbody:last-child tr:last-child td:first-child {
     .border-bottom-left-radius(0);
   }
   tfoot + tbody:last-child tr:last-child td:last-child {
+    .border-bottom-right-radius(0);
+  }
+
+  thead:last-child tr:last-child td:first-child {
+    .border-bottom-left-radius(0);
+  }
+  thead:last-child tr:last-child td:last-child {
     .border-bottom-right-radius(0);
   }
 
@@ -144,9 +173,16 @@ table {
     .border-top-right-radius(@baseBorderRadius);
   }
 
+  // Nested
+  table {
+    thead tr:last-child > th:last-child {
+      .border-bottom-right-radius(0) !important;
+    }
+    thead tr:last-child > th:first-child {
+      .border-bottom-left-radius(0) !important;
+    }
+  }
 }
-
-
 
 
 // ZEBRA-STRIPING
@@ -240,5 +276,62 @@ table th[class*="span"],
   }
   &.info:hover > td {
     background-color: darken(@infoBackground, 5%);
+  }
+}
+
+
+
+// TABBABLE TABLE
+// -----------------
+// Tables with tabs on top of it
+.tabbable-table {
+  .nav-holder {
+    border-bottom: 1px solid @tableHeaderBorder;
+    position: relative;
+  }
+  .nav-tabs {
+    margin-bottom:0;
+
+    
+  }
+  .nav-tabs >li > a {
+    border-bottom: 0;
+  }
+  // Active state, and it's :hover/:focus to override normal :hover/:focus
+  .nav-tabs > .active > a,
+  .nav-tabs > .active > a:hover,
+  .nav-tabs > .active > a:focus {
+    color: darken(@white, 5%);
+    background: none;
+    background-color: @tableHeaderBorder;
+    border: 1px solid @tableHeaderBorder;
+    border-bottom-color: transparent;
+    cursor: default;
+  }
+
+  .table-bordered {
+    border-top: 0;
+    border-right:0;
+
+    // For first th/td in the first row in the first thead or tbody
+    thead:first-child tr:first-child > th:first-child,
+    tbody:first-child tr:first-child > td:first-child,
+    tbody:first-child tr:first-child > th:first-child {
+      .border-top-left-radius(0);
+    }
+    // For last th/td in the first row in the first thead or tbody
+    thead:first-child tr:first-child > th:last-child,
+    tbody:first-child tr:first-child > td:last-child,
+    tbody:first-child tr:first-child > th:last-child {
+      .border-top-right-radius(0);
+    }
+    // For last th/td in the first row in the first thead color of border
+    thead:first-child tr:first-child > th:last-child{
+     // border-right-color:  red; //@tableHeaderBackground; 
+    }
+    // For last th/td in the first row in the first thead color of border
+    tbody tr > td:last-child{
+      border-right:1px solid  @bodyBackgroundDarker; //@tableHeaderBackground; 
+    }
   }
 }
