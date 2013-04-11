@@ -173,15 +173,7 @@ table {
     .border-top-right-radius(@baseBorderRadius);
   }
 
-  // Nested
-  table {
-    thead tr:last-child > th:last-child {
-      .border-bottom-right-radius(0) !important;
-    }
-    thead tr:last-child > th:first-child {
-      .border-bottom-left-radius(0) !important;
-    }
-  }
+
 }
 
 
@@ -286,12 +278,12 @@ table th[class*="span"],
 // Tables with tabs on top of it
 .tabbable-table {
   .nav-holder {
-    border-bottom: 1px solid @tableHeaderBorder;
+    //border-bottom: 1px solid @tableHeaderBorder;
     position: relative;
   }
   .nav-tabs {
     margin-bottom:0;
-
+    border-bottom: 0;
     
   }
   .nav-tabs >li > a {
@@ -317,13 +309,13 @@ table th[class*="span"],
     thead:first-child tr:first-child > th:first-child,
     tbody:first-child tr:first-child > td:first-child,
     tbody:first-child tr:first-child > th:first-child {
-      .border-top-left-radius(0);
+      .border-bottom-left-radius(0);
     }
     // For last th/td in the first row in the first thead or tbody
     thead:first-child tr:first-child > th:last-child,
     tbody:first-child tr:first-child > td:last-child,
     tbody:first-child tr:first-child > th:last-child {
-      .border-top-right-radius(0);
+      .border-bottom-right-radius(0);
     }
     // For last th/td in the first row in the first thead color of border
     thead:first-child tr:first-child > th:last-child{

@@ -1911,16 +1911,6 @@ table caption {
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
-.table-bordered table thead tr:last-child > th:last-child {
-  -webkit-border-bottom-right-radius: 0 !important;
-  -moz-border-radius-bottomright: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-.table-bordered table thead tr:last-child > th:first-child {
-  -webkit-border-bottom-left-radius: 0 !important;
-  -moz-border-radius-bottomleft: 0 !important;
-  border-bottom-left-radius: 0 !important;
-}
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9;
@@ -2034,11 +2024,11 @@ table th[class*="span"],
   background-color: #c4e3f3;
 }
 .tabbable-table .nav-holder {
-  border-bottom: 1px solid #0e759c;
   position: relative;
 }
 .tabbable-table .nav-tabs {
   margin-bottom: 0;
+  border-bottom: 0;
 }
 .tabbable-table .nav-tabs > li > a {
   border-bottom: 0;
@@ -2060,16 +2050,16 @@ table th[class*="span"],
 .tabbable-table .table-bordered thead:first-child tr:first-child > th:first-child,
 .tabbable-table .table-bordered tbody:first-child tr:first-child > td:first-child,
 .tabbable-table .table-bordered tbody:first-child tr:first-child > th:first-child {
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
 }
 .tabbable-table .table-bordered thead:first-child tr:first-child > th:last-child,
 .tabbable-table .table-bordered tbody:first-child tr:first-child > td:last-child,
 .tabbable-table .table-bordered tbody:first-child tr:first-child > th:last-child {
-  -webkit-border-top-right-radius: 0;
-  -moz-border-radius-topright: 0;
-  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
 }
 .tabbable-table .table-bordered tbody tr > td:last-child {
   border-right: 1px solid #d8d4cc;
