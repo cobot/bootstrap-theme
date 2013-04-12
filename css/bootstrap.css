@@ -709,7 +709,7 @@ h4 small {
 .page-header {
   padding-bottom: 9px;
   margin: 20px 0 30px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eceae6;
 }
 .page-header a {
   color: inherit;
@@ -795,7 +795,7 @@ dd {
 hr {
   margin: 20px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #ffffff;
 }
 abbr[title],
@@ -810,7 +810,7 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #f0f0f0;
 }
 blockquote p {
   margin-bottom: 0;
@@ -830,7 +830,7 @@ blockquote.pull-right {
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #f0f0f0;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -1279,7 +1279,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  background-color: #eeeeee;
+  background-color: #f0f0f0;
 }
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
@@ -1525,7 +1525,7 @@ select:focus:invalid:focus {
   line-height: 20px;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
-  background-color: #eeeeee;
+  background-color: #f0f0f0;
   border: 1px solid #ccc;
 }
 .input-append .add-on,
@@ -3521,7 +3521,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #f0f0f0;
 }
 .nav > li > a > img {
   max-width: none;
@@ -3890,7 +3890,7 @@ input[type="submit"].btn.btn-mini {
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  border-color: #f0f0f0 #dddddd #f0f0f0 #f0f0f0;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
@@ -5456,14 +5456,14 @@ a.badge:focus {
   margin-bottom: 0;
 }
 .hero-unit {
-  padding: 60px;
+  padding: 45px 60px;
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #f0f0f0;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
