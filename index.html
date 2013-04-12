@@ -69,13 +69,24 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#typo">Typography</a></li>
-              <li><a href="#tables">Tables</a></li>
-              <li><a href="#navigation">Navigation</a></li>
-              <li><a href="#navbar">Navbar</a></li>
-              <li><a href="#pagination">Pagination</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Text <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#typo">Basic typography</a></li>
+                  <li><a href="#lists">Lists</a></li>
+                  <li><a href="#hero-unit">Hero unit & page header</a></li>
+                  <li><a href="#tables">Tables</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navigation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#navigation">Tabs, pills, lists and breadcrumps</a></li>
+                  <li><a href="#navbar">Navbar</a></li>
+                  <li><a href="#pagination">Pagination</a></li>
+                </ul>
+              </li>
               <li><a href="#forms">Forms</a></li>
-              
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -219,6 +230,24 @@
 
         <div class="row">
           <div class="span12">
+            <h2>Code</h2>
+              <div class="row">
+                <div class="span6">
+                  <h3>Inline code</h3>
+                  <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+                  <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.<p>
+                </div>
+                <div class="span6">
+                  <h3>Basic code block</h3>
+                  <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+                  <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+                </div>
+              </div><!-- /row -->
+          </div>
+        </div><!-- /row -->
+
+        <div class="row">
+          <div class="span12">
              <!-- Typography / Lists -->
             <h2>Lists</h2>
             <div class="row">
@@ -313,26 +342,7 @@
           </div>
         </div><!-- /row -->
 
-
-        <div class="row">
-          <div class="span12">
-            <h2>Code</h2>
-              <div class="row">
-                <div class="span6">
-                  <h3>Inline code</h3>
-                  <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
-                  <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.<p>
-                </div>
-                <div class="span6">
-                  <h3>Basic code block</h3>
-                  <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
-                  <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
-                </div>
-              </div><!-- /row -->
-          </div>
-        </div><!-- /row -->
-
-        <div class="row">
+        <div class="row" id="hero-unit" style="padding-top: 50px;">
           <div class="span12">
             <h2>Hero unit</h2>
             <p>A lightweight, flexible component to showcase key content on your site. It works well on marketing and content-heavy sites.</p>
@@ -344,7 +354,7 @@
           </div><!-- /span -->
         </div><!-- /row -->
 
-        <div class="row">
+        <div class="row" id="page-header">
           <div class="span12">
             <h2>Page header</h2>
             <p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles).</p>
