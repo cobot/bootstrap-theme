@@ -2728,8 +2728,8 @@ table th[class*="span"],
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f9f9f7;
-  border: 1px solid #eae8e3;
+  background-color: #f7f6f4;
+  border: 1px solid #e8e5e0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3942,15 +3942,15 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #f6f5f3;
-  background-image: -moz-linear-gradient(top, #f9f9f7, #f0efec);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f7), to(#f0efec));
-  background-image: -webkit-linear-gradient(top, #f9f9f7, #f0efec);
-  background-image: -o-linear-gradient(top, #f9f9f7, #f0efec);
-  background-image: linear-gradient(to bottom, #f9f9f7, #f0efec);
+  background-color: #f3f2f0;
+  background-image: -moz-linear-gradient(top, #f7f6f4, #eeece9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f6f4), to(#eeece9));
+  background-image: -webkit-linear-gradient(top, #f7f6f4, #eeece9);
+  background-image: -o-linear-gradient(top, #f7f6f4, #eeece9);
+  background-image: linear-gradient(to bottom, #f7f6f4, #eeece9);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f7', endColorstr='#fff0efec', GradientType=0);
-  border: 1px solid #dfdbd5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff7f6f4', endColorstr='#ffeeece9', GradientType=0);
+  border: 1px solid #ddd9d2;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3984,7 +3984,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 20px;
   font-weight: 200;
   color: #6e5100;
-  text-shadow: 0 1px 0 #f9f9f7;
+  text-shadow: 0 1px 0 #f7f6f4;
 }
 .navbar .brand:hover,
 .navbar .brand:focus {
@@ -4005,8 +4005,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .divider-vertical {
   height: 40px;
   margin: 0 9px;
-  border-left: 1px solid #f0efec;
-  border-right: 1px solid #f9f9f7;
+  border-left: 1px solid #eeece9;
+  border-right: 1px solid #f7f6f4;
 }
 .navbar .btn,
 .navbar .btn-group {
@@ -4149,7 +4149,7 @@ input[type="submit"].btn.btn-mini {
   padding: 10px 15px 10px;
   color: #6e5100;
   text-decoration: none;
-  text-shadow: 0 1px 0 #f9f9f7;
+  text-shadow: 0 1px 0 #f7f6f4;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -4165,7 +4165,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a:focus {
   color: #312400;
   text-decoration: none;
-  background-color: #e5e3dd;
+  background-color: #e3e0da;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -4178,17 +4178,17 @@ input[type="submit"].btn.btn-mini {
   margin-right: 5px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ebe9e4;
-  background-image: -moz-linear-gradient(top, #eeece9, #e5e3dd);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeece9), to(#e5e3dd));
-  background-image: -webkit-linear-gradient(top, #eeece9, #e5e3dd);
-  background-image: -o-linear-gradient(top, #eeece9, #e5e3dd);
-  background-image: linear-gradient(to bottom, #eeece9, #e5e3dd);
+  background-color: #e8e6e1;
+  background-image: -moz-linear-gradient(top, #eceae6, #e3e0da);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eceae6), to(#e3e0da));
+  background-image: -webkit-linear-gradient(top, #eceae6, #e3e0da);
+  background-image: -o-linear-gradient(top, #eceae6, #e3e0da);
+  background-image: linear-gradient(to bottom, #eceae6, #e3e0da);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeece9', endColorstr='#ffe5e3dd', GradientType=0);
-  border-color: #e5e3dd #e5e3dd #c4beb2;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeceae6', endColorstr='#ffe3e0da', GradientType=0);
+  border-color: #e3e0da #e3e0da #c2bcaf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #e5e3dd;
+  *background-color: #e3e0da;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -4203,12 +4203,12 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar.disabled,
 .navbar .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: #e5e3dd;
-  *background-color: #dad7cf;
+  background-color: #e3e0da;
+  *background-color: #d8d4cc;
 }
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active {
-  background-color: #cfcac0 \9;
+  background-color: #cdc8bd \9;
 }
 .navbar .btn-navbar .icon-bar {
   display: block;
@@ -4267,7 +4267,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #e5e3dd;
+  background-color: #e3e0da;
   color: #312400;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
@@ -4476,12 +4476,6 @@ input[type="submit"].btn.btn-mini {
   *zoom: 1;
   margin-left: 0;
   margin-bottom: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .pagination ul > li {
   display: inline;
@@ -4492,19 +4486,20 @@ input[type="submit"].btn.btn-mini {
   padding: 4px 12px;
   line-height: 20px;
   text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #f7f6f4;
   border-left-width: 0;
+  color: #6e5100;
 }
 .pagination ul > li > a:hover,
 .pagination ul > li > a:focus,
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  background-color: #f5f5f5;
+  background-color: #f3f1ef;
 }
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  color: #999999;
+  color: #6e5100;
+  background-color: #f3f1ef;
   cursor: default;
 }
 .pagination ul > .disabled > span,
@@ -4617,16 +4612,17 @@ input[type="submit"].btn.btn-mini {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  background-color: #f7f6f4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #6e5100;
 }
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: #f3f1ef;
+  color: #6e5100;
 }
 .pager .next > a,
 .pager .next > span {
