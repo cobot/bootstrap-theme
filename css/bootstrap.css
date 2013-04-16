@@ -4971,7 +4971,7 @@ input[type="submit"].btn.btn-mini {
   display: block;
   padding: 4px;
   line-height: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #eceae6;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4997,8 +4997,9 @@ a.thumbnail:focus {
   margin-right: auto;
 }
 .thumbnail .caption {
-  padding: 9px;
+  padding: 15px;
   color: #555555;
+  text-align: center;
 }
 .media,
 .media-body {
