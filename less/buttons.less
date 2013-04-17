@@ -6,7 +6,6 @@
 // Base styles
 // --------------------------------------------------
 
-@btnShadow:               darken(@btnBackground, 25%);
 
 
 // Core
@@ -21,31 +20,27 @@
   vertical-align: middle;
   cursor: pointer;
   // default .buttonBackground(@btnBackground, @btnBackgroundHighlight, @white, 0 1px 1px rgba(0,0,0,.25));
-  .buttonBackground(@btnBackground, @btnBackground, @white, 0 -1px 0 rgba(0,0,0,.4));
-  //default  border: 1px solid @btnBorder;
-  border: 1px solid @btnBackground;
-  *border: 0; // Remove the border to prevent IE7's black border on input:focus
-
+  .buttonBackground(@btnBackground, @white);
+  //border: 1px solid @btnBorder;
   //default border-bottom-color: darken(@btnBorder, 10%);
 
   .border-radius(@baseBorderRadius);
   .ie7-restore-left-whitespace(); // Give IE7 some love
 
-  //.box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
-  .box-shadow(~"inset 0 -4px 3px @btnShadow");
+  .box-shadow(inset 0 -4px 3px darken(@btnBackground, 6%));
+ 
 
   // Hover/focus state
   &:hover,
   &:focus {
-    color: darken(@white, 4%); 
     text-decoration: none;
-    background-position: 0 -15px;
-    .buttonBackground(@btnShadow, @btnBackgroundHighlight);
+    //.buttonBackground(darken(@btnBackground, 6%), @white, 0 -1px 0 rgba(50,50,50,.2));
+    //border-color: darken(@btnBackground, 6%);
+    //.box-shadow(inset 0 -4px 3px darken(@btnBackground, 15%));
 
     // transition is only when going to hover/focus, otherwise the background
     // behind the gradient (there for IE<=9 fallback) gets mismatched
-    .transition(background-position .1s linear);
-    .transition(background-color .5s ease);
+    .transition(background-color .4s ease);
   }
 
   // Focus state for keyboard and accessibility
@@ -154,27 +149,33 @@ input[type="button"] {
 // Set the backgrounds
 // -------------------------
 .btn-primary {
-  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+  .buttonBackground(@btnPrimaryBackground);
+  .box-shadow(inset 0 -4px 3px darken(@btnPrimaryBackground, 6%));
 }
 // Warning appears are orange
 .btn-warning {
-  .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
+  .buttonBackground(@btnWarningBackground);
+  .box-shadow(inset 0 -4px 3px darken(@btnWarningBackground, 6%));
 }
 // Danger and error appear as red
 .btn-danger {
-  .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
+  .buttonBackground(@btnDangerBackground);
+  .box-shadow(inset 0 -4px 3px darken(@btnDangerBackground, 6%));
 }
 // Success appears as green
 .btn-success {
-  .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+  .buttonBackground(@btnSuccessBackground);
+  .box-shadow(inset 0 -4px 3px darken(@btnSuccessBackground, 6%));
 }
 // Info appears as a neutral blue
 .btn-info {
-  .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
+  .buttonBackground(@btnInfoBackground);
+  .box-shadow(inset 0 -4px 3px darken(@btnInfoBackground, 6%));
 }
 // Inverse appears as dark gray
 .btn-inverse {
-  .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
+  .buttonBackground(@btnInverseBackground);
+  .box-shadow(inset 0 -4px 3px darken(@btnInverseBackground, 6%));
 }
 
 

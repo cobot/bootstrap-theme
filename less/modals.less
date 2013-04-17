@@ -28,7 +28,7 @@
   z-index: @zindexModal;
   width: 560px;
   margin-left: -280px;
-  background-color: @white;
+  //background-color: @white;
   border: 1px solid #999;
   border: 1px solid rgba(0,0,0,.3);
   *border: 1px solid #999; /* IE6-7 */
@@ -47,12 +47,16 @@
 .modal-header {
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
+  background-color: @linkColor;
+  .border-top-radius(6px);
+
   // Close icon
   .close { margin-top: 2px; }
   // Heading
   h3 {
     margin: 0;
     line-height: 30px;
+    color: @white;
   }
 }
 
@@ -61,7 +65,8 @@
   position: relative;
   overflow-y: auto;
   max-height: 400px;
-  padding: 15px;
+  padding: 20px;
+  background-color: @white;
 }
 // Remove bottom margin if need be
 .modal-form {
