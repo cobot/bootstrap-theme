@@ -20,6 +20,8 @@
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
 .navbar-inner {
   min-height: @navbarHeight;
+  font-size: @fontSizeSmall;
+  line-height: @lineHeightSmall;
   padding-left:  20px;
   padding-right: 20px;
   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
@@ -51,9 +53,9 @@
   float: left;
   display: block;
   // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
+  padding: ((@navbarHeight - @lineHeightSmall) / 2) 20px ((@navbarHeight - @lineHeightSmall) / 2);
   margin-left: -20px; // negative indent to left-align the text down the page
-  font-size: 20px;
+  font-size: @fontSizeLarge;
   font-weight: 200;
   color: @navbarBrandColor;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
@@ -250,7 +252,7 @@
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
 }
 .navbar .nav .dropdown-toggle .caret {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 // Hover/focus
