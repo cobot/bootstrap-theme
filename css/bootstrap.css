@@ -971,11 +971,11 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 24px;
+  height: 20px;
   padding: 4px 6px;
   margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #555555;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2865,8 +2865,8 @@ button.close {
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -4072,9 +4072,9 @@ input[type="submit"].btn.btn-mini {
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 .navbar-static-top {
   position: static;
