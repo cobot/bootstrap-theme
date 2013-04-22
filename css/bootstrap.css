@@ -860,7 +860,7 @@ table caption {
   font-family: 'Museo300Regular';
 }
 .breadcrumb {
-  font-size: 13.6px;
+  font-size: 12px;
 }
 code,
 pre {
@@ -939,9 +939,9 @@ input,
 button,
 select,
 textarea {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 20px;
 }
 input,
 button,
@@ -973,7 +973,7 @@ input[type="color"],
   display: inline-block;
   height: 20px;
   padding: 4px 6px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 20px;
   color: #555555;
@@ -1546,7 +1546,7 @@ select:focus:invalid:focus {
 .input-prepend .dropdown-menu,
 .input-append .popover,
 .input-prepend .popover {
-  font-size: 16px;
+  font-size: 14px;
 }
 .input-append input,
 .input-prepend input,
@@ -1574,12 +1574,12 @@ select:focus:invalid:focus {
 .input-prepend .add-on {
   display: inline-block;
   width: auto;
-  height: 24px;
+  height: 20px;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 20px;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
   background-color: #f3f1ef;
@@ -2951,7 +2951,7 @@ button.close {
 }
 .btn-small {
   padding: 2px 10px;
-  font-size: 13.6px;
+  font-size: 14px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -2966,7 +2966,7 @@ button.close {
 }
 .btn-mini {
   padding: 0 6px;
-  font-size: 12px;
+  font-size: 10.856px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -3255,8 +3255,8 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-toolbar {
   font-size: 0;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .btn-toolbar > .btn + .btn,
 .btn-toolbar > .btn-group + .btn,
@@ -3275,13 +3275,13 @@ input[type="submit"].btn.btn-mini {
 .btn-group > .btn,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
-  font-size: 16px;
+  font-size: 14px;
 }
 .btn-group > .btn-mini {
-  font-size: 12px;
+  font-size: 10.856px;
 }
 .btn-group > .btn-small {
-  font-size: 13.6px;
+  font-size: 12px;
 }
 .btn-group > .btn-large {
   font-size: 20px;
@@ -3547,6 +3547,8 @@ input[type="submit"].btn.btn-mini {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
 }
 .nav-list > li {
   margin-bottom: 0;
@@ -4576,12 +4578,12 @@ input[type="submit"].btn.btn-mini {
 .pagination-small ul > li > a,
 .pagination-small ul > li > span {
   padding: 2px 10px;
-  font-size: 13.6px;
+  font-size: 14px;
 }
 .pagination-mini ul > li > a,
 .pagination-mini ul > li > span {
   padding: 0 6px;
-  font-size: 12px;
+  font-size: 10.856px;
 }
 .pager {
   margin: 24px 0;
