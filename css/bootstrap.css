@@ -211,8 +211,9 @@ body {
   color: #312400;
   background-color: #eceae6;
 }
-.container {
-  background-color: #ffffff;
+.container,
+.container-fluid {
+  background-color: #fbfaf8;
 }
 .footer {
   background-color: #0b5c7b;
@@ -3623,7 +3624,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #f3f1ef;
   padding-top: 8px;
   padding-bottom: 8px;
-  line-height: 24px;
+  line-height: 20px;
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
@@ -3653,7 +3654,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:focus {
   color: #6e5100;
   background: none;
-  background-color: #ffffff;
+  background-color: #fbfaf8;
   border: 1px solid #d8d4cc;
   border-bottom-color: transparent;
   cursor: default;
