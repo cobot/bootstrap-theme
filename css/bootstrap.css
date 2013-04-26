@@ -576,6 +576,19 @@ a:focus {
 .container-fluid:after {
   clear: both;
 }
+.iframe-holder {
+  width: 705px;
+}
+.iframe-holder .title-wrap {
+  margin-bottom: 24px;
+}
+.iframe-holder .title-wrap .title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.iframe-holder .controls-holder {
+  margin-top: 12px;
+}
 @font-face {
   font-family: 'Museo300Regular';
   src: url('../fonts/museo_300_macroman/Museo300-Regular-webfont.eot');
@@ -680,7 +693,8 @@ h3 {
 h1 {
   font-size: 44px;
 }
-h2 {
+h2,
+.iframe-holder .title {
   font-size: 36px;
 }
 h3 {
@@ -3366,9 +3380,6 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-group.open .btn.dropdown-toggle {
   background-color: #d8d4cc;
-}
-.btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #426ccc;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f56e21;
