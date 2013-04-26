@@ -579,15 +579,19 @@ a:focus {
 .iframe-holder {
   width: 705px;
 }
-.iframe-holder .title-wrap {
+.iframe-holder .header-wrap {
   margin-bottom: 24px;
 }
-.iframe-holder .title-wrap .title {
+.iframe-holder .title {
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 24px;
+  float: left;
 }
 .iframe-holder .controls-holder {
   margin-top: 12px;
+  text-align: right;
+  float: right;
 }
 @font-face {
   font-family: 'Museo300Regular';
@@ -3380,6 +3384,9 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-group.open .btn.dropdown-toggle {
   background-color: #d8d4cc;
+}
+.btn-group.open .btn-primary.dropdown-toggle {
+  background-color: #428ecc;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f56e21;
