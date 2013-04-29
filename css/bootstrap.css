@@ -2119,8 +2119,7 @@ table th[class*="span"],
 .tabbable-table .nav-tabs > .active > a:hover,
 .tabbable-table .nav-tabs > .active > a:focus {
   color: #f2f2f2;
-  background: none;
-  background-color: #0e759c;
+  background: #0e759c;
   border: 1px solid #0e759c;
   border-bottom: 0;
   cursor: default;
