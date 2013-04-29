@@ -219,6 +219,10 @@ body {
   background-color: #0b5c7b;
   color: #ffffff;
 }
+.footer .container {
+  background: inherit;
+  *background: transparent;
+}
 .footer .footer-content {
   background-color: inherit;
   padding: 20px 0;
