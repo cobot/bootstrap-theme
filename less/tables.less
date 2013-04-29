@@ -286,7 +286,10 @@ table th[class*="span"],
     border-bottom: 0;
     
   }
-  .nav-tabs >li > a {
+  .nav-tabs >li {
+    margin-bottom: 0;
+  }
+  .nav-tabs > li > a {
     border-bottom: 0;
   }
   // Active state, and it's :hover/:focus to override normal :hover/:focus
@@ -297,10 +300,9 @@ table th[class*="span"],
     background: none;
     background-color: @tableHeaderBorder;
     border: 1px solid @tableHeaderBorder;
-    border-bottom-color: transparent;
+    border-bottom: 0;
     cursor: default;
   }
-
   .table-bordered {
     border-top: 0;
     border-right:0;

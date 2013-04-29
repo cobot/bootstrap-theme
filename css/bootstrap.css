@@ -2109,6 +2109,9 @@ table th[class*="span"],
   margin-bottom: 0;
   border-bottom: 0;
 }
+.tabbable-table .nav-tabs > li {
+  margin-bottom: 0;
+}
 .tabbable-table .nav-tabs > li > a {
   border-bottom: 0;
 }
@@ -2119,7 +2122,7 @@ table th[class*="span"],
   background: none;
   background-color: #0e759c;
   border: 1px solid #0e759c;
-  border-bottom-color: transparent;
+  border-bottom: 0;
   cursor: default;
 }
 .tabbable-table .table-bordered {
@@ -2943,6 +2946,9 @@ button.close {
 .btn:active {
   background-image: none;
   outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
 }
 .btn.disabled,
 .btn[disabled] {
@@ -3706,7 +3712,7 @@ input[type="submit"].btn.btn-mini {
   border-bottom: 0;
 }
 .nav-tabs.nav-stacked > li > a {
-  border: 1px solid #ffffff;
+  border: 1px solid #fbfaf8;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
