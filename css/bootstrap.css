@@ -2123,6 +2123,7 @@ table th[class*="span"],
   border: 1px solid #0e759c;
   border-bottom: 0;
   cursor: default;
+  outline: none;
 }
 .tabbable-table .table-bordered {
   border-top: 0;
