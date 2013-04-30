@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Tests · Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+
+    /*  */
+    body {
+      padding-top: 60px;
+    }
+
+    section .page-header h1{
+      padding-top: 60px;
+    } 
+
+    .container .content-wrap {
+      padding-bottom: 40px;
+    }
+
+    .span12 h2 {
+      padding-top: 55px;
+    }
+
+    /* Fluid row inputs */
+    #rowInputs .row > [class*=span],
+    #fluidRowInputs .row-fluid > [class*=span] {
+      background-color: rgba(255,0,0,.1);
+    }
+    /* Default grid */
+    .show-grid {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .show-grid  div {
+      background-color: #999;
+      text-align: center; 
+      padding: 5px 0;
+    }
+
+    .show-grid .row div {
+      background-color: #ccc;
+    }
+
+    /* Fluid grid */
+    .fluid-grid {
+      margin-bottom: 45px;
+    }
+    .fluid-grid .row {
+      height: 40px;
+      padding-top: 10px;
+      margin-top: 10px;
+      color: #ddd;
+      text-align: center;
+    }
+    .fluid-grid .span1 {
+      background-color: #999;
+    }
+
+
+    </style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Bootstrap theme for Cobot</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Layout <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#grid">Grid</a></li>
+                  <li><a href="index.html#thumbs">Thumbnails</a></li>
+                  <li><a href="index.html#imgs">Images</a></li>
+                  <li><a href="index.html#media">Media object</a><li>
+                  <li><a href="iframe.html">Iframe sample</a><li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Text <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#typo">Basic typography</a></li>
+                  <li><a href="index.html#lists">Lists</a></li>
+                  <li><a href="index.html#hero-unit">Hero unit & page header</a></li>
+                </ul>
+              </li>
+              <li><a href="#tables">Tables</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navigation <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#navigation">Tabs, pills, lists and breadcrumps</a></li>
+                  <li><a href="index.html#navbar">Navbar</a></li>
+                  <li><a href="index.html#pagination">Pagination</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Forms <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#forms">Buttons and button groups</a></li>
+                  <li><a href="index.html#custom-inputs">Prepend and append on inputs</a></li>
+                  <li><a href="index.html#form-controls">Form controls</a></li>
+                  <li><a href="index.html#btn-mini-icon">Mini buttons: text and icon</a></li>
+                  <li><a href="index.html#inputs-fix">Fixed row with inputs</a></li>
+                  <li><a href="index.html#inline-form">Inline form in fluid row</a></li>
+                  <li><a href="index.html#modal">Modal window</a></li>
+                  <li><a href="index.html#labels-badges">Labels and badges</a></li>
+
+                </ul>
+              </li>
+
+
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#wells">Wells</a></li>
+                  <li><a href="index.html#close-icon">Close icon</a></li>
+                  <li><a href="index.html#gradients">Gradients</a></li>
+                  <li><a href="index.html#alerts">Alerts</a></li>
+                  <li><a href="index.html#responsive">Responsive utility classes</a></li>
+                  <li><a href="index.html#progress-bar">Progress bar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div><!-- /navbar -->
+
+
+
+  <div class="container" id="home">
+
+   
+
+      <!-- Iframe holder -->
+      <section class="section" id="iframe">
+        <!-- 
+        ================================================== -->
+        <div class="page-header">
+          <h1>Template for iframe holder</h1>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+
+            <section class="iframe-holder">
+              <header class="header-wrap clearfix">
+                <h1 class="title">Short title</h1>
+                <div class="controls-holder">
+                  <button class="btn btn-primary btn-small">Primary button</button>
+                  <button class="btn btn-primary btn-small">Primary button</button>
+                   <div class="btn-group">
+
+                    <a class="btn btn-primary dropdown-toggle btn-small" data-toggle="dropdown" href="#">
+                      <i class="icon-user"></i> User
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Profile</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Sign Out</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /controls-holder -->
+              </header>
+              <div class="iframe-content">
+                <img data-src="js/holder/holder.js/705x600" height="200">
+              </div>
+            </section> <!-- /iframe-holder -->
+
+            <section class="iframe-holder">
+              <header class="header-wrap clearfix">
+                <h1 class="title">Fancy longlong title of this amazing iframe</h1>
+                <div class="controls-holder">
+                  <button class="btn btn-primary btn-small">Primary button</button>
+                  <button class="btn btn-primary btn-small">Primary button</button>
+                   <div class="btn-group">
+
+                    <a class="btn btn-primary dropdown-toggle btn-small" data-toggle="dropdown" href="#">
+                      <i class="icon-user"></i> User
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Profile</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Sign Out</a></li>
+                    </ul>
+                  </div>
+                </div><!-- /controls-holder -->
+              </header>
+              <div class="iframe-content">
+                <img data-src="js/holder/holder.js/705x600" height="200">
+              </div>
+            </section> <!-- /iframe-holder -->
+
+          <div><!-- /span12 -->
+        </div><!--  /row -->
+      </section>
+
+      <!-- /iframe holder -->
+
+    
+
+      </div><!-- /content-wrap -->
+
+  </div> <!-- /container -->
+  
+
+
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+  <script src="js/holder/holder.js"></script>
+
+  <script>
+    $('#navbar').scrollspy();
+  </script>
+
+
+  </body>
+</html>

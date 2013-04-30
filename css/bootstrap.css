@@ -582,6 +582,7 @@ a:focus {
 }
 .iframe-holder {
   width: 705px;
+  margin-bottom: 20px;
 }
 .iframe-holder .header-wrap {
   margin-bottom: 24px;
