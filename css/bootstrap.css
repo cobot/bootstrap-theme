@@ -5578,6 +5578,44 @@ a.badge:focus {
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
+.widget-holder {
+  width: 705px;
+  margin-bottom: 20px;
+}
+.widget-plans .widget-plans-th,
+.widget-plans .widget-plans-td {
+  border-width: 1px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.widget-plans .widget-plans-th {
+  border-color: #5fb3e3;
+  color: #049cdb;
+  background: #f3f1ef;
+}
+.widget-plans .widget-plans-td {
+  background: #f7f6f4;
+}
+.widget-plans tr:last-child .widget-plans-th {
+  border-bottom: 1px solid #049cdb;
+}
+.widget-plans tr:last-child .widget-plans-td {
+  border-bottom: 1px solid #e1ded8;
+}
+.widget-plans .plan-title {
+  font-size: 120%;
+  margin-bottom: .25em;
+}
+.widget-plans .price {
+  white-space: nowrap;
+}
+.widget-plans .price .small {
+  font-size: 80%;
+}
+.widget-plans .plan-description p {
+  font-size: 85%;
+  margin-bottom: .25em;
+}
 .pull-right {
   float: right;
 }

@@ -1,0 +1,48 @@
+.widget-holder {
+	width: 705px;
+	margin-bottom: 20px;
+}
+
+// Widget with plans & prices
+.widget-plans {
+
+	.widget-plans-th,
+	.widget-plans-td {
+		//padding: @gridGutterWidth / 1.5;
+		border-width: 1px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.widget-plans-th {
+		border-color: @blueLighter;
+		color: @blue;
+		background: @bodyBackgroundLight;
+	}
+	.widget-plans-td {
+		background: @bodyBackgroundLighter;
+	}
+	tr:last-child .widget-plans-th {
+		border-bottom: 1px solid @blue;
+	}
+	tr:last-child .widget-plans-td {
+		border-bottom: 1px solid @tableBorder;
+	}
+	.plan-title {
+		font-size: 120%;
+		margin-bottom: .25em;
+	}
+	.price {
+		white-space: nowrap;
+
+		.small {
+			font-size: 80%;
+		}
+	}
+	.plan-description {
+		p {
+			font-size: 85%;
+			margin-bottom: .25em;
+		}
+	}
+}
