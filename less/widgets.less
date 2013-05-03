@@ -1,3 +1,147 @@
+// Widget for plans 
+
+// Variables  ===================================
+
+@bodyBackground:        #eceae6; //#f3f0e8;
+@bodyBackgroundLight:   lighten(@bodyBackground, 3%);
+@bodyBackgroundLighter: lighten(@bodyBackground, 5%);
+@bodyBackgroundDark:   	darken(@bodyBackground, 5%);
+@bodyBackgroundDarker:  darken(@bodyBackground, 9%);  
+
+@white:                 #fff;
+@blue:                  #049cdb; 
+@blueLight:							rgb(66, 154, 204); //#429acc; 
+@blueLighter:						#5fb3e3;
+@blueDark:              #0b5c7b; //#0064cd;
+
+@linkColor:             #429ACC; //rgb(66,154,204)
+@linkColorHover:        darken(@linkColor, 10%);
+
+@tableBorder:						@bodyBackgroundDark; // table and cell border
+
+@baseLineHeight:        24px;
+@sansFontFamily:        "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+@headingsFontFamily:    Museo300Regular,  "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif; 
+
+@baseFontSize:          16px;
+@baseLineHeight:        24px;
+@fontSizeSmall:					@baseFontSize * 0.875;
+@fontSizeSmaller:				@baseFontSize * 0.75; 
+@lineHeightSmall:				20px;
+
+@baseBorderRadius:      4px;
+@borderRadiusSmall:     3px;
+
+@btnBackground:                     @bodyBackgroundDarker;
+@btnBackgroundHighlight:            @bodyBackgroundDarker;
+@btnBorder:                         @btnBackground;
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 5%);
+
+@paddingSmall:          2px 10px;  // 26px
+
+
+// Mixins  ======================================
+
+// Mixins / Button backgrounds
+// ------------------
+.buttonBackground(@btnBackground, @textColor: @white, @textShadow: 0 -1px 0 rgba(50,50,50,.3)) {
+  // gradientBar will set the background to a pleasing blend of these, to support IE<=9
+  //.gradientBar(@startColor, @endColor, @textColor, @textShadow);
+  color: @textColor;
+  text-shadow: @textShadow;
+  background-color: @btnBackground;
+  *background-color: darken(@btnBackground, 5%); /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  border: 1px solid @btnBackground;
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  border-bottom-color: darken(@btnBackground, 6%);
+  //.reset-filter();
+  
+
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+    color: @textColor;
+    //.gradientBar(@startColor, @endColor, @textColor, @textShadow: 0 -1px 0 rgba(50,50,50,.2));
+    background-color:darken(@btnBackground, 8%);
+    *background-color: darken(@btnBackground, 8%);
+    .box-shadow(inset 0 -4px 3px darken(@btnBackground, 15%));
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@btnBackground, 10%) e("\9");
+  }
+}
+
+// Mixins / Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+// Mixins / Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.ie7-restore-left-whitespace() {
+  *margin-left: .3em;
+
+  &:first-child {
+    *margin-left: 0;
+  }
+}
+
+// Mixins / Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+// Mixins / Webkit-style focus
+// ------------------
+.tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 2px auto -webkit-focus-ring-color;
+  outline-offset: -3px;
+}
+
+// Mixins / Opacity
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+
+// CSS ==========================================
+
+// Custom font
+// -------------------------
+@font-face {
+  font-family: 'Museo300Regular';
+  src: url('../fonts/museo_300_macroman/Museo300-Regular-webfont.eot');
+  src: url('../fonts/museo_300_macroman/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/museo_300_macroman/Museo300-Regular-webfont.woff') format('woff'),
+       url('../fonts/museo_300_macroman/Museo300-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/museo_300_macroman/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+	margin: (@baseLineHeight / 2) 0;
+  font-family: @headingsFontFamily;
+}
+
 .widget-holder {
 	width: 705px;
 	margin-bottom: 20px;
@@ -5,6 +149,31 @@
 
 // Widget with plans & prices
 .widget-plans {
+	width: 100%;
+  margin-bottom: @baseLineHeight;
+  font-family: @sansFontFamily;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  p {
+  	margin: 0;
+  	line-height: @baseLineHeight;
+  }
+  
+  th,
+  td {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: @baseLineHeight;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid @tableBorder;
+  }
+
+  th {
+  	font-weight: bold;
+  	font-family: @headingsFontFamily;
+  }
 
 	.widget-plans-th,
 	.widget-plans-td {
@@ -45,4 +214,72 @@
 			margin-bottom: .25em;
 		}
 	}
+}
+
+// Button
+.btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0; // For input.btn
+  font-size: @fontSizeSmall;
+  line-height: @lineHeightSmall;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+  .buttonBackground(@btnBackground, @white);
+
+  .border-radius(@baseBorderRadius);
+  .ie7-restore-left-whitespace(); // Give IE7 some love
+
+  .box-shadow(inset 0 -4px 3px darken(@btnBackground, 6%));
+ 
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    // transition is only when going to hover/focus, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    .transition(background-color .4s ease);
+  }
+
+  // Focus state for keyboard and accessibility
+  &:focus {
+    .tab-focus();
+  }
+
+  // Active state
+  &.active,
+  &:active {
+    background-image: none;
+    outline: 0;
+    .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)");
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    background-image: none;
+    .opacity(65);
+    .box-shadow(none);
+  }
+
+}
+// Small primary button
+.btn-small {
+  padding: @paddingSmall;
+  font-size: @fontSizeSmaller;
+  .border-radius(@borderRadiusSmall);
+}
+.btn-primary.active {
+  color: rgba(255,255,255,.75);
+}
+.btn-primary {
+  .buttonBackground(@btnPrimaryBackground);
+  .box-shadow(inset 0 -4px 3px darken(@btnPrimaryBackground, 6%));
 }
