@@ -1,0 +1,96 @@
+// Start page of application
+// ----------------------------------------------
+.start-app__wrap {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	.box-shadow(0 3px 6px darken(@bodyBackground, 6%));
+
+	.header {
+		h1 {
+			font-size: @fontSizeLarge * 1.85;
+			line-height: 1.25;
+			text-align: center;
+			padding: 5px 0;
+		}
+	}
+
+	/* Main marketing message and sign up button */
+	.jumbotron {
+	  margin: 50px 0;
+	}
+	.jumbotron h1 {
+	  line-height: 1.25;
+	}
+	.jumbotron .lead {
+		font-size:  @fontSizeLarge;
+		margin: 20px 0;
+	}
+	.jumbotron .btn {
+	  //font-size: @fontSizeLarge;
+	  padding: 14px 24px;
+	  margin: 10px 0;
+	}
+	
+	.footer {
+		background: transparent;
+
+		a {
+	    color: @grayLight;
+
+	    &:hover,
+			&:focus { 
+				color: darken(@grayLight, 10%); 
+			}
+	  }
+
+	  .pull-right {
+	  	margin-left: 20px;
+	    a {
+	      background-color: transparent;
+	      padding: 0;
+	      display: inline;
+	      border-radius: none;
+
+	      &:hover {
+	        background-color: transparent;
+	        text-decoration: underline;
+	        transition: none;
+	      }
+	    }
+	    a.link-github {
+	    	padding-left: 20px;
+	    }
+	  }
+	}
+
+	.link-github {
+		position: relative;
+		padding-left: 20px;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			margin-top: -8px;
+			left: 0;
+			width: 16px;
+			height: 16px;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1QTFRFlpWVlpOSmpeX0M7Ol5aWsLCw9fT1sK6u9fX10tLT0tLSqqqq+vr7zszMq6urzszN/v7/8vLz/v3+/f3/ubm5l5ST9vb2npycn56e+/38u7y8nJyc1dTUl5eX1NPU8/Pzf39//Pv819fWvLy88vL0rq6upKOj8vPx9fX0kI6OpKSk7O3t3t3du7m609PTk5CQ+/v67u/wxsbG2NbX+vr54+Pj9fb19PT18/Hy0dHQv7y79PX0lZOT3d3fh4eHz8zNwLy87e3srq2unJeX9/f35ubmurm50dDQk5OQxcPD+vr8lpOTl5OT////AAAAI9kw2QAAAE90Uk5T////////////////////////////////////////////////////////////////////////////////////////////////////////AD1WsLMAAACzSURBVHjaRI8FDsNQDEOzdczMzMzMTN/p/Y+z33XdLEWynxTJJlWq0bOazdbcWvMkT4EuoeigLO0nAykNeHGYlVp2O20dK3hVcgBO/soJzMkPxAxQgdiTTzxeBihu4COCm39yg8iC9B+cYaEqcDRyW+BE9z5MCz3Xa8CSbLKQSQSZhwXZTFxIdQnbNTJhzu+iAhmtejfuCcmHQBYY6eNczcSA2QOMv2vVzi3JHH5ONf8WYAAt1jzGwjWKIgAAAABJRU5ErkJggg==);
+			*background-image: url("../img/icon-github.png");
+			opacity: .8;
+		}
+
+		&:hover:after {
+			opacity: 1;
+		}
+	}
+}
+
+
+.container-narrow > hr {
+  margin: 20px 0;
+}
+
